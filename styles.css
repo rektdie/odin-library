@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+    font-family: 'Figtree', sans-serif;
+}
+
+.navbar {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #4A6670;
+}
+
+.main {
+    background-color: #668F80;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.title {
+    color: #EAEFD3;
+    font-size: 3rem;
+}
+
+#new-book {
+    color: #1E2D2F;
+    width: 10%;
+    height: 10%;
+    font-size: 1.2rem;
+}
+
+.book {
+    color: #1E2D2F;
+    font-size: 3rem;
+}
