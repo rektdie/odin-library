@@ -20,7 +20,38 @@
         <div class="books">
             <div class="book">Dummy book with some dummy data</div>
         </div>
-        <button id="new-book">New Book</button>
+        <button id="new-book">+ New Book</button>
+
+        <dialog open>
+            <form action="">
+                <caption>New Book Information</caption>
+                <div class="properties">
+                    <div class="property">
+                        <label for="book-title">Title:</label>
+                        <input type="text" id="book-title" name="title">
+                    </div>
+                    
+                    <div class="property">
+                        <label for="book-author">Author:</label>
+                        <input type="text" id="book-author" name="author">
+                    </div>
+    
+                    <div class="property">
+                        <label for="book-pages">Pages:</label>
+                        <input type="number" id="book-pages" name="pages">
+                    </div>
+    
+                    <div class="property">
+                        <label for="book-read">Read:</label>
+                        <input type="checkbox" id="book-read" name="read">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button type="submit" id="add-button">Add</button>
+                    <button id="cancel">Cancel</button>
+                </div>
+            </form>
+        </dialog>
     </div>
 </body>
 </html>

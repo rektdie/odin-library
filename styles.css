@@ -22,6 +22,12 @@ body {
     padding-top: 30px;
 }
 
+.books {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .title {
     color: #EAEFD3;
     font-size: 3rem;
@@ -29,12 +35,111 @@ body {
 
 #new-book {
     color: #1E2D2F;
-    width: 10%;
-    height: 10%;
+    width: 8%;
+    height: 8%;
     font-size: 1.2rem;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    transition-duration: 0.5s;
+}
+
+#new-book:hover {
+    background-color: #263630;
+    color: #EAEFD3;
+    cursor: pointer;
 }
 
 .book {
     color: #1E2D2F;
     font-size: 3rem;
+}
+
+dialog {
+    width: 400px;
+    height: 500px;
+    transition-duration: 1;
+    background-color: #798478;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    font-size: 2rem;
+    align-items: center;
+}
+
+.properties {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.property {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+input[type="text"], input[type="number"] {
+    border: 1px solid black;
+    background-color: #A0A083;
+    color: #272727;
+    height: 25px;
+    width: 200px;
+    padding-left: 7px;
+    border-radius: 7px;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgb(47, 46, 46);
+    transition-duration: 0.5s;
+}
+
+input[type="checkbox"]:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+	background-color: #2D2E2E;
+}
+
+/* Hiding the arrows in the number input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.property:last-child {
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+#add-button, #cancel {
+    color: #1E2D2F;
+    width: 100px;
+    height: 50px;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    transition-duration: 0.5s;
+}
+
+#add-button:hover, #cancel:hover {
+    background-color: #263630;
+    color: #EAEFD3;
+    cursor: pointer;
 }
